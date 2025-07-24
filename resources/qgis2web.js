@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([332920.880333, 4261442.189271, 369701.033434, 4282227.611927], map.getSize());
+map.getView().fit([332215.798616, 4261355.261388, 368995.951718, 4282140.684044], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -1024,17 +1024,6 @@ if (elementToMove && parentElement) {
 
 //layer search
 
-var searchLayer = new SearchLayer({
-    layer: lyr_Reservatorios_9,
-    colName: 'Nome',
-    zoom: 10,
-    collapsed: true,
-    map: map
-});
-map.addControl(searchLayer);
-document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
-document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
-    
 
 //scalebar
 
