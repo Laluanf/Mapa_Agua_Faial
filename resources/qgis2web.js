@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([331417.616984, 4259396.662639, 374984.576092, 4282580.662639], map.getSize());
+map.getView().fit([333137.328087, 4263193.934734, 370575.643798, 4280799.284733], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -1133,7 +1133,7 @@ if (elementToMove && parentElement) {
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_Reservatorios_12,
+    layer: lyr_Reservatorios_11,
     colName: 'Nome',
     zoom: 10,
     collapsed: true,
